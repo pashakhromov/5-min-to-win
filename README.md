@@ -1,4 +1,4 @@
 # kaggle-dota2
-I use gradient boosting and logistic regresson to predict winner in online game.
+My attempt to use gradient boosting and logistic regresson to predict a winner in an online game.
 
-Details https://www.kaggle.com/devinanzelmo/dota-2-matches
+Kaggle competition https://www.kaggle.com/devinanzelmo/dota-2-matches
