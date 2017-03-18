@@ -68,12 +68,12 @@ if __name__ == '__main__':
 	
 	# remove features with lookahead bias
 	drop_col = [	'duration',
-					'radiant_win',
-					'tower_status_radiant',
-					'tower_status_dire',
-					'barracks_status_radiant',
-					'barracks_status_dire',
-					'lobby_type']
+			'radiant_win',
+			'tower_status_radiant',
+			'tower_status_dire',
+			'barracks_status_radiant',
+			'barracks_status_dire',
+			'lobby_type']
 	for i in range(5):
 		drop_col.append('r%d_hero' % (i+1))
 		drop_col.append('d%d_hero' % (i+1))
@@ -100,5 +100,4 @@ if __name__ == '__main__':
 	key_max = max(stats, key=stats.get)
 
 	logc, cv_max = key_max, stats[key_max]
-	
 	print '\nMax value of cross-validation score %0.5f is attained on log10(C) = %d' % (cv_max, logc)
