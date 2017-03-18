@@ -100,5 +100,4 @@ if __name__ == '__main__':
 	key_max = max(stats, key=stats.get)
 
 	logc, cv_max = key_max, stats[key_max]
-	
 	print '\nMax value of cross-validation score %0.5f is attained on log10(C) = %d' % (cv_max, logc)
