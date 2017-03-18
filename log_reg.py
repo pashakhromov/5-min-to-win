@@ -14,7 +14,8 @@ from sklearn.linear_model import LogisticRegression
 
 
 
-def bag_of_words(X):
+def encode_1ofK(X):
+	"""Does 1-of-K encoding for categorial data"""
 	# list of distinct heroes sorted by id
 	heroes = set()
 	for i in range(5):
@@ -64,7 +65,7 @@ if __name__ == '__main__':
 	X = data
 	
 	# include categorial data appropriately
-	X = bag_of_words(X)
+	X = encode_1ofK(X)
 	
 	# remove features with lookahead bias
 	drop_col = [	'duration',
